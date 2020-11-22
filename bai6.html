@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+     let str = prompt("nhap chuoi ky tu").split("");
+     alert(checkAndreplace(str));
+    }
+    function checkAndreplace(str){
+        for (let x in str){
+            if (str[x]==="-"){
+                str[x]="_"
+            }
+        } return str.join("");
+    }
+</script>
+</body>
+</html>

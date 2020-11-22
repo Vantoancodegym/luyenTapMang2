@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let str1=prompt("nhap chuoi 1");
+        let str2=prompt("nhap chuoi 2");
+        alert(checkStr(str1,str2));
+    }
+    function checkStr(str1,str2){
+        if (str1.length==str2.length){
+        for (let x in str1){
+            if (str1[x]!=str2[x]){
+                return false;
+            }
+        } return true;}
+        else {
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>
